@@ -1,10 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import Login from './auth/login';
 
-export default function App() {
+export default function main() {
   return (
-      <Login/>
+    <View style={styles.container}>
+      <Text>welcome</Text>
+    </View>
   );
 }
 
