@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-
+import Login from '../auth/login';
 export default function main() {
+  const [signed, setSignin] = useState(false);
   return (
     <View style={styles.container}>
-      <Text>welcome</Text>
+      {signed?<Text>welcome</Text>:<Login/>}
     </View>
   );
 }
